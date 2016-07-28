@@ -16,7 +16,7 @@ class Access
     public $app;
 
     /**
-     * Create a new confide instance.
+     * event a new confide instance.
      *
      * @param \Illuminate\Foundation\Application $app
      */

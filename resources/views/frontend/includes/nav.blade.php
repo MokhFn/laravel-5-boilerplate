@@ -14,7 +14,6 @@
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li>{{ link_to_route('frontend.index', trans('navs.general.home')) }}</li>
-                <li>{{ link_to_route('frontend.macros', trans('navs.frontend.macros')) }}</li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -31,7 +30,6 @@
 
                 @if (access()->guest())
                     <li>{{ link_to('login', trans('navs.frontend.login')) }}</li>
-                    <li>{{ link_to('register', trans('navs.frontend.register')) }}</li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

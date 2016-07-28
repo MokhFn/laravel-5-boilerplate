@@ -36,7 +36,7 @@ trait UseSocialite
         }
 
         /**
-         * Create the user if this is a new social account or find the one that is already there
+         * event the user if this is a new social account or find the one that is already there
          */
         $user = $this->user->findOrCreateSocial($this->getSocialUser($provider), $provider);
 
