@@ -34,8 +34,8 @@ class EventsController extends Controller
 
         $event->name = $request->name;
         $event->description = $request->description;
-        $event->ending_date = $request->ending_date;
         $event->starting_date = $request->starting_date;
+        $event->ending_date = $request->ending_date;
         $event->assigned_to = $request->assigned_to;
         $event->save();
     }

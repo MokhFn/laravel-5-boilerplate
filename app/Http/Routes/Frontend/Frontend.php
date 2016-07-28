@@ -19,7 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
 
         route::get('Events' , 'EventsController@getAll');
 
-        route::post('createEvent' , 'EventsController@store');
+        route::post('Events' , 'EventsController@store');
 
         Route::get('Event/{eventID}', ['uses' =>'EventsController@find_by_id']); // Needs to be implemented in events table
         

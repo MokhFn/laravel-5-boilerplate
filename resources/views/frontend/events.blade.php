@@ -133,7 +133,7 @@ active
                         </form>-->
 
 
-                        <form id="eventForm" method="post" class="form-horizontal" action="createEvent">
+                        <form id="eventForm" method="post" class="form-horizontal" action="/Events">
                             <div class="form-group">
                                 <label class="col-xs-3 control-label">Nom</label>
                                 <div class="col-xs-5">
@@ -173,7 +173,7 @@ active
                             <div class="form-group">
                                 <label class="col-xs-3 control-label">Description</label>
                                 <div class="col-xs-5">
-                                    <textarea id="desc" class="form-control" name="description" required >Veuillez entrer une description.</textarea>
+                                    <textarea id="desc" class="form-control" name="description" placeholder="Veuillez entrer une description"></textarea>
                                 </div>
                             </div>
 
@@ -455,15 +455,15 @@ active
                             // We need to revalidate the start date
                             data.fv.revalidateField('starting_date');
                         }
-                    })
-                    .on('success.form.bv', function (e) {
-                        e.preventDefault();
-                    var $form = $("#eventForm"),
-                        url = $form.attr('action');
-                    $.post(url, $form.serialize()).done(function () {
-                        $("#myModal").dialog("close");
                     });
-                    });
+                    //.on('success.form.bv', function (e) {
+                      //  e.preventDefault();
+                   // var $form = $("#eventForm"),
+                       // url = $form.attr('action');
+                    //$.post(url, $form.serialize()).done(function () {
+                       // $("#myModal").dialog("close");
+                    //});
+                    //});
             $("#desc")
                 .focus(function() {
                     if (this.value === this.defaultValue) {
